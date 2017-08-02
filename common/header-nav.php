@@ -78,6 +78,7 @@
     <div class="container-fluid">
         <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="index-2.html">Swift University</a> </div>
         <ul class="nav navbar-nav navbar-right">
+            <li>  <a> href="logout.php">logout</a></li>
             <!-- Notifications -->
             <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i> <span class="label-count">7</span> </a>
                 <ul class="dropdown-menu">

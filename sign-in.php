@@ -21,11 +21,12 @@ include("common/database.php");
         else{
             echo "<pre>";
             while($row = mysqli_fetch_assoc($result)){
-                $_SESSION['full_name'] = $row['name'];
+                $_SESSION['name'] = $row['Name'];
                 $_SESSION['age'] = $row['age'];
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['dob'] = $row['dob'];
                 $_SESSION['gender'] = $row['gender'];
+                //$_session['form er name er value']=$row['table er collam er name']
             }
             header("Location:dashboard.php");
         }

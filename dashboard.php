@@ -177,7 +177,6 @@ include("common/page-restriction.php");
     <div class="container-fluid">
         <div class="block-header">
             <h2>Dashboard</h2>
-            <a href="logout.php">logout</a>
             <small class="text-muted">Welcome to Swift application</small>
         </div>
         

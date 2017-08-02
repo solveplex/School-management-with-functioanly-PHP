@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include("common/header.php");
 include("common/page-restriction.php");
 include("common/database.php");
@@ -182,6 +182,7 @@ include("common/database.php");
         <div class="row clearfix">            
             
                         <?php 
+                        
 
                         $result = mysqli_query($connect, "SELECT * FROM course");
 
@@ -200,7 +201,7 @@ include("common/database.php");
                                 <p>Students: <strong class="col-green">115</strong></p>
                                 <p><a href="courses-info.html" class="btn btn-raised waves-effect btn-sm" role="button">Read more</a> </p>
                             </div>
-                            
+
                         
                 </div>
             </div>
