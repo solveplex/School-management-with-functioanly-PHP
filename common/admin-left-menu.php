@@ -40,8 +40,8 @@
                 </li>
                 <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-graduation-cap"></i><span>Courses</span> </a>
                     <ul class="ml-menu">
-                        <li><a href="courses.html">All Courses</a></li>
-                        <li><a href="add-courses.html">Add Courses</a></li>                       
+                        <li><a href="courses.php">All Courses</a></li>
+                        <li><a href="add-courses.php">Add Courses</a></li>                       
                         <li><a href="courses-info.html">Courses Info</a></li>
                     </ul>
                 </li>
