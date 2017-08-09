@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 include("common/header.php");
 include("common/page-restriction.php");
  ?>
@@ -49,7 +49,7 @@ include("common/page-restriction.php");
 					<div class="body">                        
                         <div class="row clearfix">
                             <div class="col-sm-12 col-xs-12">
-                            <form action="add-course-script.php" method="POST">
+                            <form action="course-update-script.php?id=<?= $_REQUEST['id'] ?>" method="POST">
                                 <div class="form-group">
                                 
                                     <div class="form-line">
@@ -121,7 +121,8 @@ include("common/page-restriction.php");
                             </div>
 
                             <div class="col-xs-12">
-                                <button type="submit" class="btn btn-raised g-bg-blush2">Submit</button>
+                                <button type="submit" class="btn btn-raised g-bg-blush2">SAVE UPDATE
+                                </button>
                                 <button type="submit" class="btn btn-raised">Cancel</button>
                             </div>
                             </form>

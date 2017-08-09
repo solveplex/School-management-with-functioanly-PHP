@@ -2,7 +2,7 @@
 include("common/header.php");
 include("common/page-restriction.php");
 include("common/database.php");
- ?>
+?>
 
 <body class="theme-blush">
 <?php include("common/header-nav.php"); ?>
@@ -200,6 +200,9 @@ include("common/database.php");
                                 <p>Prof.: Prof. <strong>Will Smith</strong></p>
                                 <p>Students: <strong class="col-green">115</strong></p>
                                 <p><a href="courses-info.html" class="btn btn-raised waves-effect btn-sm" role="button">Read more</a> </p>
+                                 <a href="delete-course.php?id=<?php  echo $row['id']; //for find the id?>" class="btn btn-raised waves-effect btn-sm" role="button">Delete</a>
+                                 <a href="update-course.php?id=<?php  echo $row['id']; //for find the id?>" class="btn btn-raised waves-effect btn-sm" role="button">update</a>
+
                             </div>
 
                         
