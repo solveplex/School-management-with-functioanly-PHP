@@ -45,11 +45,9 @@ include("common/page-restriction.php");
 						</ul>
 					</div>
 					<div class="body">
-                        
-                            
-                            
-                                
-                                <form action="add-professors-script.php" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+
+       
+               <form action="add-professors-script.php" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
                         <div class="row clearfix">
 
                             <div class="col-sm-6 col-xs-12">
