@@ -195,9 +195,9 @@ include("common/database.php");
                     
                             <div class="caption">
                                 <h3><?php echo $row['course_name']; ?></h3>
-                                <p>First Year, MBA</p>
-                                <p>Price: <strong class="col-blush">$315.60</strong> Time: <strong class="col-green">9 months</strong></p>
-                                <p>Prof.: Prof. <strong>Will Smith</strong></p>
+                                <p><?php echo $row['Year']; ?></p>
+                                <p>Price: <strong class="col-blush"><?php echo $row['course_price']; ?></strong> Time: <strong class="col-green">9 months</strong></p>
+                                <p>Prof.: Prof. <strong><?php echo $row['course_incharge']; ?></strong></p>
                                 <p>Students: <strong class="col-green">115</strong></p>
                                 <p><a href="courses-info.html" class="btn btn-raised waves-effect btn-sm" role="button">Read more</a> </p>
                                  <a href="delete-course.php?id=<?php  echo $row['id']; //for find the id?>" class="btn btn-raised waves-effect btn-sm" role="button">Delete</a>

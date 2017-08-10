@@ -1,6 +1,7 @@
 <?php 
 include("common/header.php");
 include("common/page-restriction.php");
+include("common/database.php");
  ?>
 
 <body class="theme-blush">
@@ -36,6 +37,14 @@ include("common/page-restriction.php");
 				<div class="card">
 					<div class="header">
 						<h2>Course Basic Information <small>Description text here...</small> </h2>
+
+                         <?php 
+                        
+
+                        $result = mysqli_query($connect, "SELECT * FROM course");
+
+                        $row = mysqli_fetch_assoc($result); ?>
+
 						<ul class="header-dropdown m-r--5">
 							<li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
 								<ul class="dropdown-menu pull-right">
@@ -53,35 +62,35 @@ include("common/page-restriction.php");
                                 <div class="form-group">
                                 
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="course_name" placeholder="Name" required="">
+                                        <input type="text" class="form-control" name="course_name" placeholder="<?php echo $row['course_name']; ?>" required="">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="datepicker" class="datepicker form-control" name="start_form" placeholder="Starts From">
+                                        <input type="datepicker" class="datepicker form-control" name="start_form" placeholder="<?php echo $row['start_date']; ?>">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Course Duration">
+                                        <input type="text" class="form-control" placeholder="<?php echo $row['duration']; ?>">
                                     </div>
                                 </div>
                             </div>                            
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" placeholder="Course Price">
+                                        <input type="number" class="form-control" placeholder="<?php echo $row['course_price']; ?>">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Course Incharge">
+                                        <input type="text" class="form-control" placeholder="<?php echo $row['course_incharge']; ?>">
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +100,7 @@ include("common/page-restriction.php");
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" placeholder="Year">
+                                        <input type="number" class="form-control" placeholder="<?php echo $row['Year']; ?>">
                                     </div>
                                 </div>
                             </div>

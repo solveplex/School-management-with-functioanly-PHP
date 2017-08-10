@@ -49,7 +49,7 @@ include("common/page-restriction.php");
 					<div class="body">                        
                         <div class="row clearfix">
                             <div class="col-sm-12 col-xs-12">
-                            <form action="add-course-script.php" method="POST">
+                             <form action="add-course-script.php" method="POST">
                                 <div class="form-group">
                                 
                                     <div class="form-line">
@@ -67,21 +67,21 @@ include("common/page-restriction.php");
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Course Duration">
+                                        <input type="datepicker" class="form-control" placeholder="Course Duration" name="course_duration">
                                     </div>
                                 </div>
                             </div>                            
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" placeholder="Course Price">
+                                        <input type="number" class="form-control" placeholder="Course Price" name="course_price">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Course Incharge">
+                                        <input type="text" class="form-control" placeholder="Course Incharge" name="couser_incharge">
                                     </div>
                                 </div>
                             </div>
@@ -91,32 +91,32 @@ include("common/page-restriction.php");
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" placeholder="Year">
+                                        <input type="number" class="form-control" placeholder="Year" name="course_year">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Website URL">
+                                        <input type="text" class="form-control" placeholder="Website URL" name="course_url">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Course Description"></textarea>
+                                        <textarea rows="4" class="form-control no-resize" placeholder="Course Description" name="course_description"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                            <div class="dz-message">
+                                <div class="dz-message">
                                         <div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
                                         <h3>Drop files here or click to upload.</h3>
                                         <em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em> </div>
                                     <div class="fallback">
-                                    <input name="file" type="file" multiple />
+                                    <input name="file_image" type="file" multiple />
                             </div>
                             </div>
 
