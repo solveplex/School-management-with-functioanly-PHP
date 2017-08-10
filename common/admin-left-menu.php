@@ -25,9 +25,9 @@
                 <li><a href="events.html"><i class="zmdi zmdi-calendar-check"></i><span>Event Management</span> </a></li>
                 <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-account"></i><span>Professors</span> </a>
                     <ul class="ml-menu">
-                        <li><a href="professors.html">All Professors</a></li>
-                        <li><a href="add-professors.html">Add professors</a></li>                       
-                        <li><a href="profile.html">professors Profile</a></li>
+                        <li><a href="professors.php">All Professors</a></li>
+                        <li><a href="add-professors.php">Add professors</a></li>                       
+                        <li><a href="profile.php">professors Profile</a></li>
                     </ul>
                 </li>                
                 <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-outline"></i><span>Students</span> </a>

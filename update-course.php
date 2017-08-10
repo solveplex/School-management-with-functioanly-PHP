@@ -58,6 +58,8 @@ include("common/database.php");
 					<div class="body">                        
                         <div class="row clearfix">
                             <div class="col-sm-12 col-xs-12">
+                            <!--START fORM HEAR -->
+
                             <form action="course-update-script.php?id=<?= $_REQUEST['id'] ?>" method="POST">
                                 <div class="form-group">
                                 
