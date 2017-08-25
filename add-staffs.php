@@ -21,12 +21,14 @@ include("common/page-restriction.php");
 
 
     <!-- #END# Right Sidebar --> 
+</section>
+<!--Side menu and right menu -->
 
 <!-- main content -->
 <section class="content">
     <div class="container-fluid">
         <div class="block-header">
-            <h2>Add Professor</h2>
+            <h2>Add Staff</h2>
             <small class="text-muted">Welcome to Swift application</small>
         </div>
         <div class="row clearfix">
@@ -45,22 +47,18 @@ include("common/page-restriction.php");
 						</ul>
 					</div>
 					<div class="body">
-
-       
-               <form action="add-professors-script.php" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
                         <div class="row clearfix">
-
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="First Name" name="first_name">
+                                        <input type="text" class="form-control" placeholder="First Name">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Last Name" name="last_name">
+                                        <input type="text" class="form-control" placeholder="Last Name">
                                     </div>
                                 </div>
                             </div>
@@ -69,80 +67,77 @@ include("common/page-restriction.php");
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="datepicker form-control" placeholder="Date of Birth" name="date_of_birth">
+                                        <input type="text" class="form-control" placeholder="Phone No.">
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Department" name="depertment">
+                                        <input type="text" class="datepicker form-control" placeholder="Date of Birth">
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Position" name="position">
+                                        <input type="text" class="form-control" placeholder="Age">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="form-group drop-custum">
+                                    <select class="form-control show-tick">
+                                        <option value="">-- Gender --</option>
+                                        <option value="10">Male</option>
+                                        <option value="20">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="form-group drop-custum">
+                                    <select class="form-control show-tick">
+                                        <option value="">-- Department --</option>
+                                        <option value="10">BCA</option>
+                                        <option value="20">MCA</option>
+                                        <option value="20">BCom</option>
+                                        <option value="20">MCom</option>
+                                    </select>
+                                </div>
+                            </div> 
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="Enter Your Email">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row clearfix"> 
-
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Phone" name="phone_number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Enter Your Email" name="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" placeholder="Website URL" name="url">
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="dz-message">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <form action="http://thememakker.com/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+                                    <div class="dz-message">
                                         <div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
                                         <h3>Drop files here or click to upload.</h3>
                                         <em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em> </div>
-                                     <div class="fallback">
+                                    <div class="fallback">
                                         <input name="file" type="file" multiple />
                                     </div>
-
-
-
-                          </div>
-
-                                
+                                </form>
                             </div>
-
+                        </div>
+                        <div class="row clearfix">                            
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+                                        <textarea rows="4" class="form-control no-resize" placeholder="Description"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12">
-                                <input type="submit" name="" value="submit" class="btn btn-raised g-bg-blush2"> 
+                                <button type="submit" class="btn btn-raised g-bg-blush2">Submit</button>
                                 <button type="submit" class="btn btn-raised">Cancel</button>
                             </div>
-                            </form>
                         </div>
                     </div>
 				</div>
@@ -152,7 +147,7 @@ include("common/page-restriction.php");
 			<div class="col-md-12 col-xs-12">
 				<div class="card">
 					<div class="header">
-						<h2>Professor's Account Information <small>Description text here...</small> </h2>
+						<h2>Staff Account Information <small>Description text here...</small> </h2>
 						<ul class="header-dropdown m-r--5">
 							<li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
 								<ul class="dropdown-menu pull-right">
@@ -199,7 +194,7 @@ include("common/page-restriction.php");
 			<div class="col-md-12 col-xs-12">
 				<div class="card">
 					<div class="header">
-						<h2>Professor Social Media Info <small>Description text here...</small> </h2>
+						<h2>Staff Social Media Info <small>Description text here...</small> </h2>
 						<ul class="header-dropdown m-r--5">
 							<li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-more-vert"></i></a>
 								<ul class="dropdown-menu pull-right">
@@ -262,11 +257,27 @@ include("common/page-restriction.php");
                     </div>
 				</div>
 			</div>
-		</div>
+		</div>        
     </div>
 </section>
-<!-- main content -->
 
-<?php
-include("common/fotter.php");
-?>
+<div class="color-bg"></div>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
+
+
+<script src="assets/plugins/autosize/autosize.js"></script> <!-- Autosize Plugin Js --> 
+<script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js -->
+<script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+<!-- Bootstrap Material Datetime Picker Plugin Js --> 
+<script src="assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="assets/js/pages/forms/basic-form-elements.js"></script>
+
+<script src="assets/js/pages/index.js"></script>
+</body>
+
+<!-- Mirrored from thememakker.com/swift/university/add-staffs.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jul 2017 19:28:44 GMT -->
+</html>

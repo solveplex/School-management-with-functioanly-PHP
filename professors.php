@@ -1,6 +1,9 @@
-﻿<?php 
+<?php 
+
+
 include("common/header.php");
 include("common/page-restriction.php");
+include("common/database.php");
  ?>
 
 <body class="theme-blush">
@@ -13,16 +16,7 @@ include("common/page-restriction.php");
         <?php include('common/admin-left-menu.php'); ?>
         <!-- #Menu -->
     </aside>
-    <!-- #END# Left Sidebar --> 
-    <!-- Right Sidebar  এখান থেকে শুরু -->
-    
 
-
-
-
-    <!-- #END# Right Sidebar --> 
-
-<!-- main content -->
 <section class="content">
     <div class="container-fluid">
         <div class="block-header">
@@ -30,6 +24,11 @@ include("common/page-restriction.php");
             <small class="text-muted">Welcome to Swift application</small>
         </div>
         <div class="row clearfix">
+
+                    <?php 
+                        $result = mysqli_query($connect, "SELECT * FROM professor JOIN users ON (professor.id=users.id)");
+                        while($row = mysqli_fetch_assoc($result)){
+                    ?>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="card">
                     <div class="body">
@@ -49,21 +48,26 @@ include("common/page-restriction.php");
                             </div>
 
                             <div class="">
-                                <h4 class="m-b-5">Dr. John</h4>
-                                <p class="text-muted">Java<span> <a href="#" class="text-pink">websitename.com</a> </span></p>
+                                <h4 class="m-b-5"><?php echo $row['First Name']; ?></h4>
+                                <p class="text-muted">Java<span> <a href="#" class="text-pink">
+                                    <?php 
+                                        echo $row['username'];
+                                    ?>
+                                </a> </span></p>
                             </div>
 
                             <p class="text-muted">795 Folsom Ave, Suite 600 San Francisco, CADGE 94107</p>                           
-                            <a href="profile.html"  class="btn btn-raised btn-sm">View Profile</a>
+                            <a href="profile.php"  class="btn btn-raised btn-sm">View Profile</a>
                             <ul class="social-links list-inline m-t-10">
                                 <li><a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a></li>
                                 <li><a title="twitter" href="#" ><i class="zmdi zmdi-twitter"></i></a></li>
-                                <li><a title="instagram" href="3.html" ><i class="zmdi zmdi-instagram"></i></a></li>
+                                <li><a title="instagram" href="3.php" ><i class="zmdi zmdi-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php } ?>
           
         </div>
         <div class="row clearfix">
